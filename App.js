@@ -1,13 +1,31 @@
+import react, {Component} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, FlatList, Text, View } from 'react-native';
+import axios from 'axios';
+import { Component } from 'react/cjs/react.production.min';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+const baseUrl = 'https://jsonplaceholder.typicode.com/posts/1';
+
+export default class App extends Component {
+  
+  constructor(){
+    super();
+    this.state = {
+      isLoading : true, 
+      dataSource : [] 
+    }
+  }
+
+
+componentDidMount(){
+
+
+}
+render(){
+  return{
+    View
+  }
+}
 }
 
 const styles = StyleSheet.create({
