@@ -18,12 +18,25 @@ export default class App extends Component {
 
 
 componentDidMount(){
-
+  axios({
+    method: 'GET',
+    url: `${baseUrl}`,
+  }).then((response) => {
+    console.log(response.data);
+  });
+  
+  axios.get(`${baseUrl}`).then((response) => {
+    console.log(response.data);
+  })
+  
+  .catch((err) => {
+    console.log(err);
+  });
 
 }
 render(){
   return{
-    View
+    
   }
 }
 }
